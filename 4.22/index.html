@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+		//将字符串‘48294746’转换成数组[4,8,2,9,4,7,4,6];并找出其中的最大数
+			var a='48294746';
+			var b=a.split('');
+			var c=0;
+			var d=[];
+			for(var i in b){
+				c=parseInt(b[i]);
+				d.push(c);
+			}
+			console.log(d);
+			var max=d[0];
+			for(var k=0;k<d.length;k++){
+				if(max<d[k]){
+					max=d[k]
+				}
+			}
+			alert('字符串a中最大的数字为'+max);
+			//数组countryList=["America","Greece","Britain","Canada","China","Egypt"]中包含'a'或'A'元素的个数
+			var countryList=["America","Greece","Britain","Canada","China","Egypt"];
+			var und=countryList.join(',');
+			var Dund=und.split(',');
+			var len=Dund.length;
+			var v=0;
+//			alert(Dund)
+			for(var c=0;c<len;c++){
+				if(Dund[c].match(/a/)=='a'){
+					v++
+				}
+			}
+			alert("数组countryList中含有a或A的元素为"+v+"个");
+			
+		
+			
+		</script>
+</body>
+</html>
