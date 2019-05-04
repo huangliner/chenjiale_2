@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8" />
 		<title></title>
+	</head>
+	<body>
 		<script type="text/javascript">
-			function aa() 
-			{
-				var num=0;
-				for (var i=0;i<arguments.length;i++) 
-				{
-					num+=arguments[i];
+			function aa() {
+				var lx=0;
+				for (var i=0;i<arguments.length;i++) {
+					lx+=arguments[i];
 				}
-				return num;							//求和
+				return lx;	
 			}
 			alert(aa.call(Math, 2, 4)); 
 			alert(aa.apply(Math, [2, 4]));
-			var a=[1,4,2,6,8,0];
 			
+			
+			var a=[1,4,2,6,8,0];
 			Math.max.apply(Math,a)
 		</script>
-	</head>
-	<body>
 	</body>
 </html>
